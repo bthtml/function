@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>靖康云管理系统</title>
+<link href="./public/css/bootstrap.min.css" rel="stylesheet">
+<link href="./public/css/style.css" rel="stylesheet">
+<link href="./public/css/eleganticon.css" rel="stylesheet">
+<link href="./public/css/sui.min.css" rel="stylesheet">
+<link href="./public/css/bootstrap-switch.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="./public/js/html5shiv.min.js"></script>
+      <script src="./public/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="print-top">
+<header>
+<!-- 载入头部 -->
+ <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/"><img src="./public/img/logo.png" width="143" height="48"  alt=""/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+          <ul class="nav navbar-nav ">
+<li class="active"><a href="/index.php/Admin/Index/index/memu_top/用户管理" target="_self">用户管理</a></li><li ><a href="/index.php/Admin/Index/index/memu_top/财务管理" target="_self">财务管理</a></li><li ><a href="/index.php/Admin/Index/index/memu_top/服务管理" target="_self">服务管理</a></li><li ><a href="/index.php/Admin/Index/index/memu_top/前台管理" target="_self">前台管理</a></li><li ><a href="/index.php/Admin/Index/index/memu_top/帐号管理" target="_self">帐号管理</a></li> 
+<li role="presentation" class="dropdown navbar-right">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <span class="glyphicon glyphicon-user"></span>abc****ef@qq.com<span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+<!--          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>-->
+          <li role="separator" class="divider"></li>
+          <li><a href="/data/data.php?action=UserLogout">退出</a></li>
+        </ul>
+      </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+</header>
+</div>
+<article>
+<div class="container-fluid">
+      <div class="row">
+
+        <!-- 载入侧边栏 -->
+          <div class="col-sm-3 col-md-2 sidebar">
+
+              <div class="navbar-header navbar-inverse navbar-padding row-div" style="padding:0; margin:0;">
+                  <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+                      <span class="sr-only">nav</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9" style="padding:0; margin:0;"><ul class="nav nav-sidebar">
+                  <p class="no-hover">二级栏目</p>
+            <li   class="active"><a href="./manage.html"><span class="glyphicon glyphicon-tags"></span>三级栏目</a></li>
+                  <li><a href="./webname.html"><span class="glyphicon glyphicon-home"></span>网站名称修改</a></li>
+       				<li><a href="./runingstatus.html"><span class="icon_chat_alt"></span>站点状态</a></li>
+                    <li><a href="./hostname.html"><span class="icon_globe-2"></span>绑定主机名</a></li>
+                    <li><a href="./homepage.html"><span class="icon_pencil-edit"></span>默认首页设置</a></li>
+                    <li ><a href="ftp://1818.s13.h365.cn/" target="_blank"><span class="glyphicon glyphicon-file"></span>文件管理</a></li>
+                    <p class="no-hover">二级栏目</p>
+                    <li><a href="./changepassword.html"><span class="glyphicon glyphicon-lock"></span>FTP密码修改</a></li>
+                    <li><a href="./siteprotect.html"><span class="icon_documents_alt "></span>站点目录保护</a></li>
+                    <li><a href="./page404.html"><span class="icon_error-triangle_alt "></span>404页面设置</a></li>
+                    <li><a href=""><span class="glyphicon glyphicon-edit"></span>访问统计</a></li>
+                    <li><a href="./email"><span class="glyphicon glyphicon-envelope"></span>邮局管理</a></li>
+                    <li><a href="./database"><span class="glyphicon glyphicon-align-justify"></span>数据库</a></li>
+                    <p class="no-hover">二级栏目</p>
+                    <li ><a href="http://www.miibeian.gov.cn/" target="_blank"><span class="glyphicon glyphicon-pencil"></span>网站备案</a></li>
+                    <li><a href="./db.html"><span class="icon_document_alt "></span>数据库连接范例</a></li>
+                    <li><a href="./emailex.html"><span class="icon_document_alt "></span>发送邮件范例</a></li>
+                    <li><a href="./upLoadfile.html"><span class="icon_document_alt "></span>上传文件范例</a></li>
+                            <p class="no-hover">二级栏目</p>
+                    <li ><a href="http://www.miibeian.gov.cn/" target="_blank"><span class="glyphicon glyphicon-pencil"></span>网站备案</a></li>
+                    <li><a href="./db.html"><span class="icon_document_alt "></span>数据库连接范例</a></li>
+                    <li><a href="./emailex.html"><span class="icon_document_alt "></span>发送邮件范例</a></li>
+                    <li><a href="./upLoadfile.html"><span class="icon_document_alt "></span>上传文件范例</a></li>
+                            <p class="no-hover">二级栏目</p>
+                    <li ><a href="http://www.miibeian.gov.cn/" target="_blank"><span class="glyphicon glyphicon-pencil"></span>网站备案</a></li>
+                    <li><a href="./db.html"><span class="icon_document_alt "></span>数据库连接范例</a></li>
+                    <li><a href="./emailex.html"><span class="icon_document_alt "></span>发送邮件范例</a></li>
+                    <li><a href="./upLoadfile.html"><span class="icon_document_alt "></span>上传文件范例</a></li>
+                  </ul>  </div>        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="min-main">
+                <h2><span class="glyphicon glyphicon-tags b-color mright-20"></span>标题xxx</h2>
+
+-------------------内容-----------
+
+
+
+            </div>
+<div class="print-top">
+<footer>
+<!-- 载入底部 -->
+ <hr>
+<div class="container member-footer">
+
+
+	<p> &copy;  2015 广州市靖康计算机科技有限公司版权所有</p>
+
+
+</div>
+</footer>
+</div>
+<script src="./public/js/jquery.min.js"></script>
+<script src="./public/js/bootstrap.min.js"></script>
+
+        </div>
+      </div>
+    </div>
+</article>
+</body></html>
