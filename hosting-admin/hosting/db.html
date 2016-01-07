@@ -1,0 +1,499 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>靖康云管理系统</title>
+<link href="../public/css/bootstrap.min.css" rel="stylesheet">
+<link href="../public/css/style.css" rel="stylesheet">
+<link href="../public/css/eleganticon.css" rel="stylesheet">
+<link href="../public/css/sui.min.css" rel="stylesheet">
+<link href="../public/css/bootstrap-switch.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="../public/js/html5shiv.min.js"></script>
+      <script src="../public/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="print-top">
+<header>
+<!-- 载入头部 -->
+ <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/"><img src="../public/img/logo.png" width="143" height="48"  alt=""/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+          <ul class="nav navbar-nav navbar-right">
+<li><a  href='../' target='_self' title='首页'>首页</a> </li><li><a  href='../order/' target='_self' title='订单管理'>订单管理</a> </li><li class="active"><a  href='../console/' target='_self' title='产品管理'>产品管理</a> </li><li><a  href='../payment/' target='_self' title='财务中心'>财务中心</a> </li><li><a  href='../account/' target='_self' title='会员信息'>会员信息</a> </li><li><a  href='../worklist/' target='_self' title='在线帮助'>在线帮助</a> </li>
+<li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <span class="glyphicon glyphicon-user"></span>abc****ef@qq.com<span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+<!--          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>-->
+          <li role="separator" class="divider"></li>
+          <li><a href="/data/data.php?action=UserLogout">退出</a></li>
+        </ul>
+      </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+</header>
+</div>
+<article>
+<div class="container-fluid">
+      <div class="row">
+
+        <!-- 载入侧边栏 -->
+          <div class="col-sm-3 col-md-2 sidebar print-top">
+
+              <div class="navbar-header navbar-inverse navbar-padding row-div" style="padding:0; margin:0;">
+                  <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+                      <span class="sr-only">nav</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9" style="padding:0; margin:0;"><ul class="nav nav-sidebar">
+                  <p class="no-hover">主机管理</p>
+     <li><a href="./manage.html"><span class="glyphicon glyphicon-tags"></span>详细信息</a></li>
+                  <li><a href="./webname.html"><span class="glyphicon glyphicon-home"></span>网站名称修改</a></li>
+              <li><a href="./runingstatus.html"><span class="icon_chat_alt"></span>站点状态</a></li>
+                    <li><a href="./hostname.html"><span class="icon_globe-2"></span>绑定主机名</a></li>
+                    <li><a href="./homepage.html"><span class="icon_pencil-edit"></span>默认首页设置</a></li>
+                    <li ><a href="#" target="_blank"><span class="glyphicon glyphicon-file"></span>文件管理</a></li>
+                    <li><a href="./changepassword.html"><span class="glyphicon glyphicon-lock"></span>FTP密码修改</a></li>
+                    <li><a href="./siteprotect.html"><span class="icon_documents_alt "></span>站点目录保护</a></li>
+                    <li><a href="./page404.html"><span class="icon_error-triangle_alt "></span>404页面设置</a></li>
+                    <li><a href=""><span class="glyphicon glyphicon-edit"></span>访问统计</a></li>
+                    <li><a href="./email"><span class="glyphicon glyphicon-envelope"></span>邮局管理</a></li>
+                    <li><a href="./database"><span class="glyphicon glyphicon-align-justify"></span>数据库</a></li>
+                    <li ><a href="http://www.miibeian.gov.cn/" target="_blank"><span class="glyphicon glyphicon-pencil"></span>网站备案</a></li>
+                    <li  class="active"   ><a href="./db.html"><span class="icon_document_alt "></span>数据库连接范例</a></li>
+                    <li><a href="./emailex.html"><span class="icon_document_alt "></span>发送邮件范例</a></li>
+                    <li><a href="./upLoadfile.html"><span class="icon_document_alt "></span>上传文件范例</a></li>
+                  </ul>  </div>        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="min-main">
+                <h4><span class="icon_document_alt  b-color mright-20"></span>数据库连接范例</h4>
+                
+<p style="margin-top:20px;">请选择相应的数据库连接范例：</p>
+<div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+    <ul id="myTabs" class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="dropdown active">
+        <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents" aria-expanded="false">&nbsp;各种数据库程序连接范例&nbsp;<span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+          <li class="active"><a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1" aria-expanded="true">ASP 连接 ACCESS数据库</a></li>
+          <li class=""><a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2" aria-expanded="false">ASP 连接 SQL Server数据库</a></li>
+       <li class=""><a href="#dropdown3" role="tab" id="dropdown3-tab" data-toggle="tab" aria-controls="dropdown3" aria-expanded="false">ASP 连接 My Server数据库程序</a></li>  
+       <li class=""><a href="#dropdown4" role="tab" id="dropdown4-tab" data-toggle="tab" aria-controls="dropdown4" aria-expanded="false">JSP 连接 ACCESS数据库程序</a></li>
+       <li class=""><a href="#dropdown5" role="tab" id="dropdown5-tab" data-toggle="tab" aria-controls="dropdown5" aria-expanded="false">JSP 连接 SQL Server数据库</a></li>
+       <li class=""><a href="#dropdown6" role="tab" id="dropdown6-tab" data-toggle="tab" aria-controls="dropdown6" aria-expanded="false">JSP 连接 My Server数据库</a></li>
+       <li class=""><a href="#dropdown7" role="tab" id="dropdown7-tab" data-toggle="tab" aria-controls="dropdown7" aria-expanded="false">PHP 连接 ACCESS数据库</a></li>
+       <li class=""><a href="#dropdown8" role="tab" id="dropdown8-tab" data-toggle="tab" aria-controls="dropdown8" aria-expanded="false">PHP 连接 SQL Server数据库</a></li>
+       <li class=""><a href="#dropdown9" role="tab" id="dropdown9-tab" data-toggle="tab" aria-controls="dropdown9" aria-expanded="false">PHP 连接 My Server数据库</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div role="tabpanel" class="tab-pane fade active in" id="dropdown1" aria-labelledby="dropdown1-tab">
+      <h3>ASP 连接 ACCESS数据库</h3>
+        <p><pre><%
+'==================================================================================================
+
+'程序名称:ASP连接ACCESS数据库
+
+                              
+
+  '程序开发:靖康科技 http://www.3098.com
+
+  '版权所有:广州市靖康计算机科技有限公司版权所有
+
+  '联系方式:(020)88271083 OICQ：305467508(技术支持) 305470288(业务洽谈)
+
+  
+
+  '未经本公司同意不的转载 http://www.3098.com
+
+  '==================================================================================================
+
+option explicit
+dim conn,connstr,db 
+'======================================用户修改开始================================================
+
+db="db1.mdb" '更改数据库名称及数据库路径
+
+'======================================用户修改结束================================================
+
+response.buffer=true '启用缓冲处理
+Set conn = Server.CreateObject("ADODB.Connection") 
+conn.ConnectionTimeout = 10 '设置connection对象连接数据库的逾期时间
+conn.CommandTimeout = 20 '设置执行execute方法时间
+conn.CursorLocation = 3 '将记录存放在游览器端
+connstr="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Server.MapPath(db) 
+conn.Open connstr 
+function CloseDatabase 
+Conn.close 
+Set conn = Nothing 
+End Function 
+%></pre></p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledby="dropdown2-tab">
+         <h3>ASP 连接 SQL Server数据库程序</h3>
+         <p><pre><%
+'==================================================================================================
+
+  '程序名称:ASP连接SQL Server数据库
+
+  
+
+  '程序开发:靖康科技 http://www.3098.com
+
+  '版权所有:广州市靖康计算机科技有限公司版权所有
+
+  '联系方式:(020)88271083 OICQ：305467508(技术支持) 305470288(业务洽谈)
+
+  
+
+  '未经本公司同意不的转载 http://www.3098.com
+
+  '==================================================================================================
+dim conn,connstr,strSQLServerName,strSQLDBUserName,strSQLDBPassword,strSQLDBName
+
+'======================================用户修改开始================================================
+
+strSQLServerName = "localhost" '服务器名称或地址
+strSQLDBUserName = "text" '数据库帐号
+strSQLDBPassword = "jkkj" '数据库密码,这个是我的，改成你自己的
+strSQLDBName = "text" '数据库名称
+
+'======================================用户修改结束================================================
+
+response.buffer=true '启用缓冲处理
+Set conn = Server.CreateObject("ADODB.Connection") 
+conn.ConnectionTimeout = 10 '设置connection对象连接数据库的逾期时间
+conn.CommandTimeout = 20 '设置执行execute方法时间
+conn.CursorLocation = 3 '将记录存放在游览器端
+connstr = "Provider=SQLOLEDB.1;Persist Security Info=False;Server="&strSQLServerName&";User ID="&strSQLDBUserName&";Password="&strSQLDBPassword&";Database="&strSQLDBName&";"
+conn.Open connstr
+%></pre></p>
+      </div>
+      
+            <div role="tabpanel" class="tab-pane fade" id="dropdown3" aria-labelledby="dropdown3-tab">
+         <h3>ASP 连接 My Server数据库程序</h3>
+         <p><pre><%
+'==================================================================================================
+
+  '程序名称:ASP连接My Server数据库
+
+  
+
+  '程序开发:靖康科技 http://www.3098.com
+
+  '版权所有:广州市靖康计算机科技有限公司版权所有
+
+  '联系方式:(020)88271083 OICQ：305467508(技术支持) 305470288(业务洽谈)
+
+  
+
+  '未经本公司同意不的转载 http://www.3098.com
+
+  '==================================================================================================
+
+dim conn,connstr,strSQLServerName,strSQLDBUserName,strSQLDBPassword,strSQLDBName
+'======================================用户修改开始================================================
+
+strSQLServerName = "localhost" '服务器名称或地址
+strSQLDBUserName = "text" '数据库帐号
+strSQLDBPassword = "jkkj" '数据库密码
+strSQLDBName = "text" '数据库名称
+
+'======================================用户修改结束================================================
+
+strconnection="driver={mysql odbc 3.51 driver};database="&strSQLDBName&";server="&strSQLServerName&";uid="&strSQLDBUserName&";password="&strSQLDBPassword&""
+set adodataconn = server.createobject("adodb.connection")
+adodataconn.open strconnection
+%></pre></p>
+      </div>
+
+ <div role="tabpanel" class="tab-pane fade" id="dropdown4" aria-labelledby="dropdown4-tab">
+         <h3>JSP 连接 ACCESS数据库</h3>
+         <p><pre><%@page contentType="text/html;charset=gb2312"%>
+<%@page import="java.sql.*"%>
+<%
+/*==================================================================================================
+
+   程序名称:JSP连接ACCESS数据库
+
+  
+
+   程序开发:靖康科技 http://www.3098.com
+
+   版权所有:广州市靖康计算机科技有限公司版权所有
+
+   联系方式:(020)88271083 OICQ：305467508(技术支持) 305470288(业务洽谈)
+
+  
+
+   未经本公司同意不的转载 http://www.3098.com
+
+  ==================================================================================================*/
+
+//======================================用户修改开始================================================
+
+String strData="db1.mdb"; //更改数据库名称及数据库路径。注意由网站根到文件的路径
+
+//======================================用户修改结束================================================
+
+String dbpath = application.getRealPath(strData); //转化成物理路径
+String url ="jdbc:odbc:Driver={Microsoft Access Driver (*.mdb)};DBQ="+dbpath; 
+Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+Connection conn= DriverManager.getConnection(url); 
+%>
+</pre></p>
+      </div>
+<div role="tabpanel" class="tab-pane fade" id="dropdown5" aria-labelledby="dropdown5-tab">
+         <h3>JSP 连接 SQL Server数据库</h3>
+         <p><pre><%@ page contentType="text/html;charset=gb2312"%> 
+<%@ page import="java.sql.*"%> 
+<%
+
+/*==================================================================================================
+
+ 程序名称:JSP连接SQL Server数据库
+
+  
+
+ 程序开发:靖康科技 http://www.3098.com
+
+ 版权所有:广州市靖康计算机科技有限公司版权所有
+
+ 联系方式:(020)88271083 OICQ：305467508(技术支持) 305470288(业务洽谈)
+
+  
+
+ 未经本公司同意不的转载 http://www.3098.com
+
+  ==================================================================================================*/
+
+//======================================用户修改开始================================================
+
+String strSQLServerName = "localhost"; //服务器名称或地址
+String strSQLDBUserName = "text";//数据库帐号
+String strSQLDBPassword = "jkkj"; //数据库密码,这个是我的，改成你自己的
+String strSQLDBName = "text"; //数据库名称
+
+//======================================用户修改结束================================================
+
+Class.forName("com.microsoft.jdbc.sqlserver.SQLServerDriver").newInstance(); 
+String url="jdbc:microsoft:sqlserver://"+strSQLServerName+":1433;DatabaseName="+strSQLDBName; 
+Connection conn= DriverManager.getConnection(url,strSQLDBUserName,strSQLDBPassword); 
+%></pre></p>
+      </div>
+<div role="tabpanel" class="tab-pane fade" id="dropdown6" aria-labelledby="dropdown6-tab">
+         <h3>JSP 连接 My Server数据库</h3>
+         <p><pre><%@ page contentType="text/html; charset=gb2312" %>
+<%@ page language="java" %>
+<%@ page import="com.mysql.jdbc.Driver" %>
+<%@ page import="java.sql.*" %>
+<%
+
+/*==================================================================================================
+
+ 程序名称:JSP连接My Server数据库
+
+  
+
+ 程序开发:靖康科技 http://www.3098.com
+
+ 版权所有:广州市靖康计算机科技有限公司版权所有
+
+ 联系方式:(020)88271083 OICQ：305467508(技术支持) 305470288(业务洽谈)
+
+  
+
+ 未经本公司同意不的转载 http://www.3098.com
+
+  ==================================================================================================*/
+
+//======================================用户修改开始================================================
+
+String driverName="com.mysql.jdbc.Driver"; //驱动程序名
+String datahost="localhost"; //数据库地址
+String userName="text"; //数据库用户名
+String userPasswd="jkkj"; //数据库密码
+String dbName="text"; //数据库名
+
+//======================================用户修改结束================================================
+
+String url="jdbc:mysql://"+datahost+"/"+dbName+"?user="+userName+"&password="+userPasswd;
+Class.forName("com.mysql.jdbc.Driver").newInstance();
+Connection connection=DriverManager.getConnection(url);
+%></pre></p>
+      </div>
+   
+<div role="tabpanel" class="tab-pane fade" id="dropdown7" aria-labelledby="dropdown7-tab">
+         <h3>PHP 连接 ACCESS数据库</h3>
+         <p><pre>
+
+/*==================================================================================================
+
+ 程序名称:PHP连接ACCESS数据库
+
+  
+
+ 程序开发:靖康科技 http://www.3098.com
+
+ 版权所有:广州市靖康计算机科技有限公司版权所有
+
+ 联系方式:(020)88271083 OICQ：305467508(技术支持) 305470288(业务洽谈)
+
+  
+
+ 未经本公司同意不的转载 http://www.3098.com
+
+  ==================================================================================================*/
+
+//======================================用户修改开始================================================
+
+$db="db1.mdb"; //更改数据库名称及数据库路径
+
+//======================================用户修改结束================================================
+
+$conn=new com("ADODB.Connection"); 
+$dsn="DRIVER={Microsoft Access Driver (*.mdb)};DBQ=".realpath($db); 
+$conn->open($dsn); 
+
+</pre>
+</p>
+      </div>
+<div role="tabpanel" class="tab-pane fade" id="dropdown8" aria-labelledby="dropdown8-tab">
+         <h3>PHP 连接 SQL Server数据库</h3>
+         <p><pre>
+
+
+/*==================================================================================================
+
+ 程序名称:PHP连接SQL Server数据库
+
+  
+
+ 程序开发:靖康科技 http://www.3098.com
+
+ 版权所有:广州市靖康计算机科技有限公司版权所有
+
+ 联系方式:(020)88271083 OICQ：305467508(技术支持) 305470288(业务洽谈)
+
+  
+
+ 未经本公司同意不的转载 http://www.3098.com
+
+  ==================================================================================================*/
+
+//======================================用户修改开始================================================
+
+$hostname="localhost"; //MSSQL服务器的IP地址 或 服务器的名字
+$dbuser="text"; //MSSQL服务器的帐号
+$dbpasswd="jkkj"; //MSSQL服务器的密码
+$dbname="text"; //数据库的名字
+
+//======================================用户修改结束================================================
+
+$conn = mssql_connect($hostname,$dbuser,$dbpasswd) or die("Could not connect"); //连接MSSQL
+$db = mssql_select_db($dbname); 
+if (! $db) {
+die("不能连接到数据库!数据库不存在!");
+}
+
+</pre></p>
+      </div>
+<div role="tabpanel" class="tab-pane fade" id="dropdown9" aria-labelledby="dropdown9-tab">
+         <h3>PHP 连接 My Server数据库</h3>
+         <p><pre>
+
+/*==================================================================================================
+
+ 程序名称:PHP连接My Server数据库
+
+  
+
+ 程序开发:靖康科技 http://www.3098.com
+
+ 版权所有:广州市靖康计算机科技有限公司版权所有
+
+ 联系方式:(020)88271083 OICQ：305467508(技术支持) 305470288(业务洽谈)
+
+  
+
+ 未经本公司同意不的转载 http://www.3098.com
+
+  ==================================================================================================*/
+
+//======================================用户修改开始================================================
+
+$mysql_host="localhost"; //服务器地址
+$mysql_user="text"; //数据库用户名称
+$mysql_pass="jkkj"; //数据库密码
+$mysql_db="text"; //数据库名
+
+//======================================用户修改结束================================================
+$conn=@mysql_connect ( $mysql_host, $mysql_user, $mysql_pass) or die("Could not connect");
+$db = @mysql_select_db($mysql_db,$conn);
+if (! $db) {
+die("不能连接到数据库!数据库不存在!");
+}
+</pre></p>
+      </div>
+      
+    </div>
+  </div>
+
+</div>
+<div class="print-top">
+<footer>
+<!-- 载入底部 -->
+ <hr>
+<div class="container member-footer">
+<div class="row">
+<div class="col-xs-12 col-md-8">
+	<p class="hidden-xs">关于我们  |   联系我们  |   网站地图</p>
+    <p  class="hidden-xs">地址：广州市越秀区寺右新马路108号丰伟大厦18楼B单元</p>
+	<p> &copy;  2015 广州市靖康计算机科技有限公司版权所有</p>
+	<p  class="hidden-xs">IDC运营许可证：粤B1.B2-20030107&nbsp;&nbsp;ISP运营许可证：粤B2-20030107</p>
+	<p class="hidden-xs"><img src="../public/img/bottom_36.gif"/></p>
+</div>
+<div class="col-xs-12 col-md-4 hidden-xs">
+<p>销售服务电话:<span class="text-danger">28849383转305</span></p><p>
+7×24小时服务热线:<span class="text-danger">15360077791(24h)</span></p><p>
+办公电话(9:00--18:00):<span class="text-danger">020-28849383(10线)</span></p><p>
+投诉与建议服务热线:<span class="text-danger">13312837020</span></p>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../public/js/jquery.min.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+
+
+
+        </div>
+      </div>
+    </div>
+</article>
+</body></html>

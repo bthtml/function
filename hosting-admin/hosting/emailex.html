@@ -1,0 +1,338 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>靖康云管理系统</title>
+<link href="../public/css/bootstrap.min.css" rel="stylesheet">
+<link href="../public/css/style.css" rel="stylesheet">
+<link href="../public/css/eleganticon.css" rel="stylesheet">
+<link href="../public/css/sui.min.css" rel="stylesheet">
+<link href="../public/css/bootstrap-switch.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="../public/js/html5shiv.min.js"></script>
+      <script src="../public/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="print-top">
+<header>
+<!-- 载入头部 -->
+ <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/"><img src="../public/img/logo.png" width="143" height="48"  alt=""/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+          <ul class="nav navbar-nav navbar-right">
+<li><a  href='../' target='_self' title='首页'>首页</a> </li><li><a  href='../order/' target='_self' title='订单管理'>订单管理</a> </li><li class="active"><a  href='../console/' target='_self' title='产品管理'>产品管理</a> </li><li><a  href='../payment/' target='_self' title='财务中心'>财务中心</a> </li><li><a  href='../account/' target='_self' title='会员信息'>会员信息</a> </li><li><a  href='../worklist/' target='_self' title='在线帮助'>在线帮助</a> </li>
+<li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <span class="glyphicon glyphicon-user"></span>abc****ef@qq.com<span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+<!--          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>-->
+          <li role="separator" class="divider"></li>
+          <li><a href="/data/data.php?action=UserLogout">退出</a></li>
+        </ul>
+      </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+</header>
+</div>
+<article>
+<div class="container-fluid">
+      <div class="row">
+
+        <!-- 载入侧边栏 -->
+          <div class="col-sm-3 col-md-2 sidebar print-top">
+
+              <div class="navbar-header navbar-inverse navbar-padding row-div" style="padding:0; margin:0;">
+                  <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+                      <span class="sr-only">nav</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9" style="padding:0; margin:0;"><ul class="nav nav-sidebar">
+                  <p class="no-hover">主机管理</p>
+ <li><a href="./manage.html"><span class="glyphicon glyphicon-tags"></span>详细信息</a></li>
+                  <li><a href="./webname.html"><span class="glyphicon glyphicon-home"></span>网站名称修改</a></li>
+              <li><a href="./runingstatus.html"><span class="icon_chat_alt"></span>站点状态</a></li>
+                    <li><a href="./hostname.html"><span class="icon_globe-2"></span>绑定主机名</a></li>
+                    <li><a href="./homepage.html"><span class="icon_pencil-edit"></span>默认首页设置</a></li>
+                    <li ><a href="#" target="_blank"><span class="glyphicon glyphicon-file"></span>文件管理</a></li>
+                    <li><a href="./changepassword.html"><span class="glyphicon glyphicon-lock"></span>FTP密码修改</a></li>
+                    <li><a href="./siteprotect.html"><span class="icon_documents_alt "></span>站点目录保护</a></li>
+                    <li><a href="./page404.html"><span class="icon_error-triangle_alt "></span>404页面设置</a></li>
+                    <li><a href=""><span class="glyphicon glyphicon-edit"></span>访问统计</a></li>
+                    <li><a href="./email"><span class="glyphicon glyphicon-envelope"></span>邮局管理</a></li>
+                    <li><a href="./database"><span class="glyphicon glyphicon-align-justify"></span>数据库</a></li>
+                    <li ><a href="http://www.miibeian.gov.cn/" target="_blank"><span class="glyphicon glyphicon-pencil"></span>网站备案</a></li>
+                    <li><a href="./db.html"><span class="icon_document_alt "></span>数据库连接范例</a></li>
+                    <li class="active"><a href="./emailex.html"><span class="icon_document_alt "></span>发送邮件范例</a></li>
+                    <li><a href="./upLoadfile.html"><span class="icon_document_alt "></span>上传文件范例</a></li>
+                  </ul>  </div>        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="min-main">
+                <h4><span class="icon_document_alt  b-color mright-20"></span>发送邮件范例</h4>
+                
+<p style="margin-top:20px;">请选择相应Email发送范例：</p>
+<div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+    <ul id="myTabs" class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="dropdown active">
+        <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents" aria-expanded="false">&nbsp;各种Email发送范例&nbsp;<span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+          <li class="active"><a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1" aria-expanded="true">ASP 发送 Email</a></li>
+          <li class=""><a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2" aria-expanded="false">JSP 发送 Email</a></li>
+       <li class=""><a href="#dropdown3" role="tab" id="dropdown3-tab" data-toggle="tab" aria-controls="dropdown3" aria-expanded="false">PHP 发送 Email</a></li>  
+        </ul>
+      </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div role="tabpanel" class="tab-pane fade active in" id="dropdown1" aria-labelledby="dropdown1-tab">
+      <h3>ASP 发送 Email</h3>
+        <p><pre><%
+
+'==================================================================================================
+
+'程序名称:ASP 发送 Email
+
+  
+
+'程序开发:靖康科技 http://www.3098.com
+
+'版权所有:广州市靖康计算机科技有限公司版权所有
+
+'联系方式:(020)88271083 OICQ：305467508(技术支持) 305470288(业务洽谈)
+
+  
+
+'未经本公司同意不的转载 http://www.3098.com
+
+  '==================================================================================================
+
+Sub TOJmail(Toemail, Title, Content, SmtpServer, SmtpEmail, SmtpUser, SmtpPwd, FromName)
+
+'收件人信息 
+email = Toemail 
+title = Title
+msg = Content
+
+'发送邮件参数设置 
+smtpserver = SmtpServer 
+smtpuser = SmtpUser
+smtpemail = SmtpEmail
+smtppwd = SmtpPwd
+
+'发送邮件 
+Set jmail = server.CreateObject ("jmail.message") 
+jmail.Silent = true 
+jmail.Charset = "gb2312" 
+jMail.ContentType = "text/html" 
+jmail.From = SmtpEmail
+jmail.FromName = FromName
+
+jmail.Subject = title
+jmail.AddRecipient email
+jmail.Body = msg 
+
+jmail.MailServerUserName = smtpuser 
+jmail.MailServerPassWord = smtppwd 
+isgo = jmail.Send(smtpserver) 
+
+if err then 
+SendMail= err.description 
+err.clear 
+else 
+SendMail="发送成功" 
+end if 
+jmail.Close 
+set jmail = nothing 
+
+Response.Write SendMail
+
+End Sub
+
+'==================================发送邮箱基本设置开始============================================
+
+Toemail="to@3098.com" '收件人邮箱
+Title="邮件标题" '邮件标题
+Content="邮件内容" '邮件内容
+SmtpServer="smtp.3098.com" '邮件服务器
+SmtpEmail="from@3098.com" '发件人邮箱
+SmtpUser="UserName" '发件人用户名
+SmtpPwd="Pass" '发件人密码
+FromName="Name" '发件人姓名
+
+'==================================发送邮箱基本设置结束============================================
+
+Call TOJmail(Toemail, Title, Content, SmtpServer, SmtpEmail, SmtpUser, SmtpPwd, FromName)
+%></pre></p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledby="dropdown2-tab">
+         <h3>JSP 发送 Email</h3>
+         <p><pre><%@page contentType="text/html;charset=gb2312"%>
+<%@ page import="java.util.*, javax.mail.*, javax.mail.internet.*" %>
+<%
+
+/*==================================================================================================
+
+ 程序名称:JSP 发送 Email
+
+  
+
+ 程序开发:靖康科技 http://www.3098.com
+
+ 版权所有:广州市靖康计算机科技有限公司版权所有
+
+ 联系方式:(020)88271083 OICQ：305467508(技术支持) 305470288(业务洽谈)
+
+  
+
+ 未经本公司同意不的转载 http://www.3098.com
+
+  ==================================================================================================*/
+//==================================发送邮箱基本设置开始============================================
+
+String smtphost = "smtp.3098.com"; // 发送邮件服务器
+String user = "UserName"; // 邮件服务器登录用户名
+String password = "Password"; // 邮件服务器登录密码
+String from = "from@text.com"; // 发送人邮件地址
+String to = "to@text.com"; // 收件人邮件地址
+String subject = "邮件标题!"; // 邮件标题
+String body = "邮件内容!"; // 邮件内容
+
+//==================================发送邮箱基本设置结束============================================
+
+try {
+Properties props = new Properties();
+props.put("mail.smtp.host", smtphost);
+props.put("mail.smtp.auth","true");
+Session ssn = Session.getInstance(props, null);
+
+MimeMessage message = new MimeMessage(ssn);
+
+InternetAddress fromAddress = new InternetAddress(from);
+message.setFrom(fromAddress);
+InternetAddress toAddress = new InternetAddress(to);
+message.addRecipient(Message.RecipientType.TO, toAddress);
+
+message.setSubject(subject);
+message.setText(body);
+
+Transport transport = ssn.getTransport("smtp");
+transport.connect(smtphost, user, password);
+transport.sendMessage(message, message.getRecipients(Message.RecipientType.TO));
+//transport.send(message);
+transport.close();
+%><p>你的邮件已发送，请返回。</p><%
+} catch(Exception m) {
+out.println(m.toString());
+}
+%></pre></p>
+      </div>
+      
+            <div role="tabpanel" class="tab-pane fade" id="dropdown3" aria-labelledby="dropdown3-tab">
+         <h3>PHP 发送 Email</h3>
+         <p><pre>/*==================================================================================================
+
+ 程序名称:PHP 发送 Email
+
+  
+
+ 程序开发:靖康科技 http://www.3098.com
+
+ 版权所有:广州市靖康计算机科技有限公司版权所有
+
+ 联系方式:(020)88271083 OICQ：305467508(技术支持) 305470288(业务洽谈)
+
+  
+
+ 未经本公司同意不的转载 http://www.3098.com
+
+  ==================================================================================================*/
+
+function TOJMail($From,$FromName,$FromUser,$FromPass,$TOMail,$TOTitle,$TOContent,$SmtpServer)
+{
+$jmail=new COM("JMail.Message")or die("无法调用Jmail组件");
+$jmail->logging="true";
+$jmail->From=$From;
+$jmail->FromName=$FromName;
+$jmail->AddRecipient($TOMail);
+$jmail->Subje=$TOTitle;
+$jmail->Body=$TOContent;
+$jmail->MailServerUserName=$FromUser;
+$jmail->MailServerPassword=$FromPass;
+$jmail->Send($SmtpServer);
+echo 发送成功;
+}
+//==================================发送邮箱基本设置开始============================================
+
+$From = "from@3098.com"; //发件人地址
+$FromName = "发件人姓名"; //发件人姓名
+$FromUser = "UserName"; //发件人用户名
+$FromPass = "Password"; //发件人密码
+$TOMail = "to@3098.com"; //收件人地址
+$TOTitle = "邮件标题"; //邮件标题
+$TOContent = "邮件内容"; //邮件内容
+$SmtpServer = "mail.3098.com"; //邮件服务器
+
+//==================================发送邮箱基本设置结束============================================
+
+TOJMail($From,$FromName,$FromUser,$FromPass,$TOMail,$TOTitle,$TOContent,$SmtpServer);</pre></p>
+      </div>
+
+      
+    </div>
+  </div>
+
+</div>
+<div class="print-top">
+<footer>
+<!-- 载入底部 -->
+ <hr>
+<div class="container member-footer">
+<div class="row">
+<div class="col-xs-12 col-md-8">
+	<p class="hidden-xs">关于我们  |   联系我们  |   网站地图</p>
+    <p  class="hidden-xs">地址：广州市越秀区寺右新马路108号丰伟大厦18楼B单元</p>
+	<p> &copy;  2015 广州市靖康计算机科技有限公司版权所有</p>
+	<p  class="hidden-xs">IDC运营许可证：粤B1.B2-20030107&nbsp;&nbsp;ISP运营许可证：粤B2-20030107</p>
+	<p class="hidden-xs"><img src="../public/img/bottom_36.gif"/></p>
+</div>
+<div class="col-xs-12 col-md-4 hidden-xs">
+<p>销售服务电话:<span class="text-danger">28849383转305</span></p><p>
+7×24小时服务热线:<span class="text-danger">15360077791(24h)</span></p><p>
+办公电话(9:00--18:00):<span class="text-danger">020-28849383(10线)</span></p><p>
+投诉与建议服务热线:<span class="text-danger">13312837020</span></p>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../public/js/jquery.min.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+
+
+
+        </div>
+      </div>
+    </div>
+</article>
+</body></html>
